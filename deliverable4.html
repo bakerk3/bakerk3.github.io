@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Deliverable 4: Everyday Tech Project Webpage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Katherine Baker</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="template.html">Project Template</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                   <h2 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Deliverable 4: Everyday Tech Project Webpage</span></h2>
+                   <!-- Construction Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-primary fw-bolder mb-0">Construction: Wearable Health Technology</h2>
+                                <!-- Download resume button-->
+                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <a class="btn btn-primary px-4 py-3" href="https://github.com/Alexwcislo/CS302Final.git" target="_blank">
+                                    Demo in Github repo ->
+                                </a>
+                            </div>
+                            <!--Text-Only Post Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col-lg-12"><div>
+                                            <p>
+                                                For our project, we looked at the accelerometer sensor, as used in much wearable health technology, such as in the Oura Ring. Along with getting into some of the granular details of how wearable health technology works, we also viewed this tech through the philosophical lens of Epistemology, more specifically, Reliabilism and what it means to rely on vs. trust an agent. We consulted several resources to build the foundations for our project; one of the most helpful was the Makerspace, where we got help constructing our demo of an accelerometer. We were both interested in looking at wearable health technology as it has become more prevalent in everyday life, and it worked out well that the Makerspace had the resources for us to actually look at the fine details of how accelerometers work.  
+                                            </p>
+                                            <br>
+                                            <p>
+                                                As for the actual technical concepts behind what we looked at regarding the Oura Ring, the accelerometer is a type of motion sensor that is used by the ring (and many other types of wearable health technology). Accelerometers capture acceleration along the three axes in 3D space (X, Y, and Z axes) which allows them to help measure things like step counts, free fall, and workout tracking. For our specific demo that involved building a working circuit using an accelerometer, we used an Arduino Uno microcontroller board and an ADXL345 accelerometer, and utilized I^2C communication between these two. We followed a tutorial on building the circuit and adapting the code from Circuit Digest (Jain 2020). From there, we were able to construct our prototype, which showed how the real time motion sensing works along all three axes. Take a look at this in the video below!
+                                            </p>
+                                            <br>
+                                            <div class="col-lg-12"><figure>
+                                                <img class="project-img" src="assets/block-diagram.png" alt="Block diagram of the ADXL345 accelerometer'" />
+                                                <figcaption>Functional Block Diagram of ADXL345 accelerometer</figcaption>
+                                            </figure></div>
+                                            <br>
+                                            <div class="col-lg-12"><figure>
+                                                <img class="project-img" src="assets/ADXL345.png" alt="ADXL345 accelerometer" />
+                                                <figcaption>ADXL345 accelerometer</figcaption>
+                                            </figure></div>
+                                            <br>
+                                            <div class="col-lg-12"><figure>
+                                                <img class="project-img" src="assets/arduino.png" alt="Arduino Uno microcontroller board" />
+                                                <figcaption>Arduino Uno microcontroller board</figcaption>
+                                            </figure></div>
+                                            <br>
+                                            <div class="col-lg-12"><figure>
+                                                <img class="project-img" src="assets/horizontal.png" alt="Diagram of motion sensing along X and Y axes" />
+                                                <figcaption>Diagram of motion sensing along X and Y axes</figcaption>
+                                            </figure></div>
+                                            <br>
+                                            <div class="col-lg-12"><figure>
+                                                <img class="project-img" src="assets/vertical.png" alt="Diagram of motion sensing along Z axis" />
+                                                <figcaption>Diagram of motion sensing along Z axis</figcaption>
+                                            </figure></div>
+                                            <br>
+                                            <video width="1000" height="750" controls>
+                                                <source src="assets/Accelerometer-Demo.mov" type="video/mp4" aria-label="Video of a graph plotting acceleration along X, Y, and Z axes">
+                                            </video>
+                                            <br>
+                                            <br>
+                                            <p>
+                                                Works Cited
+                                                <ul>
+                                                    <li>ADXL345 Product Information https://www.analog.com/en/products/adxl345.html</li>
+                                                    <li>Jain, R. (2020). Interfacing ADXL345 Accelerometer with Arduino UNO. CircuitDigest. https://circuitdigest.com/microcontroller-projects/interface-adxl345-accelerometer-with-arduino-uno</li>
+                                                    <li>Learn about MEMS accelerometers, gyroscopes, and magnetometers · VectorNav. (n.d). https://www.vectornav.com/resources/inertial-navigation-primer/theory-of-operation/theory-mems</li>
+                                                </ul>
+                                            </p>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Multimedia Post Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col-lg-12"><div>
+                                            <h3>Multimedia Post</h3>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/multimedia.png" alt="Bluesky post that contains an image of raspberry yogurt covered pretzels>'" /></div>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/mm-code1.png" alt="Python code to post image to Bluesky" /></div>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/mm-code2.png" alt="Python code to post image to Bluesky" /></div>
+                                            <br>
+                                            <p>
+                                                To post a multimedia post on Bluesky, I again referenced the ATProto API documentation to help understand the process of sending an image while maintaining the aspect ratio, and including alt text. I decided to keep up the raspberry yogurt covered pretzel theme and found this image on google.  
+                                            </p>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--User Interaction Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col-lg-12"><div>
+                                            <h3>User Interaction</h3>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/likepost.png" alt="Bluesky post that has been liked>'" /></div>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/likepostcode.png" alt="Python code to like another user's post on Bluesky" /></div>
+                                            <br>
+                                            <p>
+                                                Liking another user's post was probably the most challenging part for me. I referenced the API and the other resources that Jean listed in the deliverable, but I also had to spend a good amount of time playing around with the syntax to make sure that I could actually like the post. Figuring out the AT URI was intimidating at first, but after looking at an example in the reading I was able to figure it out and construct it using the information in the post's URL. The print statement with the like reference was helpful for this, since I could see that my AT URI was referencing the correct post. In terms of design, I tried to make my code concise and decided to like the Bluesky post because it was the one account that my bot follows. 
+                                            </p>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--External Package Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col-lg-12"><div>
+                                            <h3>External Package</h3>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/ep-post.png" alt="Bluesky post that includes a random string of characters>'" /></div>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/ep-code1.png" alt="Python code to import an external package called PyRandomString" /></div>
+                                            <br>
+                                            <div class="col-lg-12"><img class="project-img" src="assets/ep-code2.png" alt="Python code to generate a random string and include it in a Bluesky post" /></div>
+                                            <br>
+                                            <p>
+                                                 I spent some time looking up random Python packages online to try and find a simple one that I could incorporate into my bot's code. I found this one from Lakhya Jyoti Nath [https://pypi.org/project/pyrandomstring/] which had some basic documentation to work with to install the package, import it, and use it to generate a random string, which was very helpful. From there, I decided to make all of my multimedia posts have a text component that was a randomly generated string of characters using this package. I also updated my text-only post to reiterate that I love random strings. 
+                                            </p>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    <!--Deconstruction-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-secondary fw-bolder mb-4">Deconstruction: Bluesky Bot</h2>
+                            </div>
+                            <!--Deconstruction Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <p>
+                                            When it came to the discussions in this unit, my thinking was slightly less challenged than in some of the previous class discussions. I think we were all starting from a place closer to consensus, generally speaking for most of the questions. Thinking about the first question we discussed, <strong>Should we care about the relations between humans and bots when making ethical judgements? Are these relations equally as important as human-human relations?</strong> My immediate thought was yes -- especially so as the bot's anthropoglossicness increases. This was corroborated by the pre-class reading, which helpfully gave an example of defining anthropoglossicness along a spectrum, which I think is a really good way of framing the intended behaviors of bots (Stieglitz et al., 2017). This seemed to be along the lines of what others in class were thinking, and I liked Jean's clarifying question about disclosure of bot identity. I think that is crucial to understanding human-bot relations online. Either way, I think it's important that we consider the ethics of these relationships, but it becomes especially ethically grey if bots are not disclosed as bots online. <br>
+                                            For our next question, <strong>Is it ok for a bot to harm some people if it makes more people happy?</strong> Our class landed on there not really being a clear answer to this question, as is the case for a lot of ethical questions. I think there's inherent harm to some party in nearly every bot operation. I, for one, can't think of a bot that could be implemented that would only affect people positively; somebody always has to bear the cost of either creating the bot or the effects of its actions. The Social Bot Network reading for class solidified this idea for me, because it shows how relatively easy it is to employ malicious bots on a large, organized scale (Boshmaf et al., 2011). I agreed with Hudson who said that misleading people in any scenario is bad, so doing something like sharing fake content to raise awareness about a social issue is doing more harm than good. Klaus also commented that we can't really conclude the extent of the harm that a bot causes in a lot of real world scenarios, so that is one thing that makes this quesiton difficult to answer. I appreciated London's complicating question: Does freedom of speech go away when it's a bot? I think this will be important to consider now and in the future. <br>
+                                            The question <strong>Would social media be a better place for more people if there were no bots at all?</strong> was really interesting to discuss. I went and came out with essentially the same opinion: Yes. Even though the botivist reading presented a really fascinating use case that showed how bots can be used to enact change for social good, thinking broadly about social media, I believe we would all be better off if there were less forces vying for our attention and engagement (Savage et al., 2016). Klaus brought up another good point, which was that bots are an amplification of existing power, so those who already have more resources will have easier access to using bots to serve their agenda. I appreciated one thing that Hudson and Adit touched on, which was the example of bots like the ones on Discord. These are bots that are mainly used as tools, and it is disclosed that they are bots. They are not anthropoglossic in most cases. I think the closer that bots can be to a tool or a feature that is equally available to all users and identified as a bot, the stronger an argument for use you can make. <br>
+                                            My favorite quesiton from our discussion was definitely this: <strong>Is social media a platform or a product?</strong> I think this has become a really crucial question to answer (like in the case of the Meta trial right now), especially as we see more and more examples of digital enshittification taking place in our lifetime. I think, with the current state of things, social media is both a platform and a product. I really liked Dynamique's thought that we're in a transitional phase right now; social media started off with the intentions of being a platform, but we are increasingly seeing this transform into more of a product as monetization and commercialization become so ubiquitous online.  <br>
+                                            A lot of my lingering questions come from ones that my classmates posed. Specifically, I am still wondering about London's question regarding free speech, although that may potentially be out of the scope of our class. I also am wondering about the implications of a question that Harry posed: If people just <b>believed</b> that there were no bots online, would social media be a better place? Lastly, I am really interested in seeing how the Meta trial plays out and what the verdict comes back as. I think that that will help answer the question of whether social media (or at least Meta) is a platform or a product, which will surely have  fascinating implications either way. 
+                                        </p>
+                                        <p>
+                                            Works Cited <br>
+                                            Boshmaf, Y., Muslukhov, I., Beznosov, K., & Ripeanu, M. (2011). The Socialbot Network: When Bots Socialize for Fame and Money. University of British Columbia. https://drive.google.com/file/d/1KXdSrGOE4Agi7ptVX3DOwUAb6cNybM3H/view <br>
+                                            Savage, S., Monroy-Hernández, A., & Höllerer, T. (2016). Botivist: Calling Volunteers to Action using Online Bots. https://doi.org/10.1145/2818048.2819985 <br>
+                                            Stieglitz, S., Brachten, F., Ross, B., & Jung, A.-K. (2017). Do Social Bots Dream of Electric Sheep? A Categorisation of Social Media Bot Accounts. Australasian Conference on Information Systems. https://drive.google.com/file/d/1fKDixMYghZ8HlZR6YC_RYeERsGseWNWV/view <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                </div>
+            
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Katherine Baker 2026</div></div>
+                    <!-- <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
